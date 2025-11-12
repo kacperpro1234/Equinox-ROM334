@@ -11,5 +11,5 @@ echo "- Fixing DPI"
 SET_PROP "vendor" "ro.sf.init.lcd_density" "450"
 sed -i \
     "/use_content_detection/a ro.surface_flinger.set_idle_timer_ms=250\nro.surface_flinger.set_touch_timer_ms=300" \
-    "$WORK_DIR/vendor/default.prop"
+    "$WORK_DIR/vendor/build.prop"
 
